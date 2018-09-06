@@ -21,7 +21,7 @@ public struct Swift {
 }
 
 public class DomainContext: SwiftContext {
-    public var preContext: SwiftContext?
+    public weak var preContext: SwiftContext?
     public var tokens: [TokenType] = []
     public var name: String
     public var accessLevel: AccessLevel

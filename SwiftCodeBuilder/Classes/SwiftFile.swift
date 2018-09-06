@@ -41,7 +41,7 @@ public class SwiftFile {
 }
 
 public class FileType: SwiftContext {
-    public var preContext: SwiftContext?
+    public weak var preContext: SwiftContext?
     public var tokens: [TokenType] = []
     public var name: String
     public required init(name: String, action: SourceCodeWriteAction) {
